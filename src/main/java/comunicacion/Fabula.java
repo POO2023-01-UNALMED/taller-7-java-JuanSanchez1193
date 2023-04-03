@@ -12,16 +12,21 @@ public class Fabula extends Escrito{
 	
 	
 	//methods
-	public int palabrasTotales(int num) {
-		return 0;
+	public int palabrasTotales(int cantPal) {
+		int cantPag = this.getPaginas();
+		int palTol = cantPal* cantPag;
+		return palTol;
 	}
 	
 	public String interpretacion() {
-		return "";
+		String a = this.interpretacion;
+		return a;
 	}
 	
 	public String toString() {
-		return "";
+	    StringBuilder output = new StringBuilder();
+	    output.append(this.resumen()).append("\n").append(this.ensenanza);
+	    return output.toString();
 	}
 	
 	//getters and setters

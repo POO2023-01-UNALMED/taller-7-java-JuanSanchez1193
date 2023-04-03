@@ -17,16 +17,24 @@ public class Libro extends Escrito {
 	
 	
 	//methods 
-	public int palabrasTotales(int numero) {
-		return 0;
+	public int palabrasTotales(int cantPal) {
+		int cantPag = this.getPaginas();
+		int palTol = cantPal* cantPag;
+		return palTol *2;
 	}
 	
 	public String interpretacion() {
-		return "";
+		String a = this.interpretacion;
+		return a;
 	}
 	
 	public String toString() {
-		return "";
+	    StringBuilder output = new StringBuilder();
+	    output.append(this.resumen()).append("\n");
+	    output.append(this.co_autor).append("\n");
+	    output.append(this.editorial).append("\n");
+	    output.append(this.edicion);
+	    return output.toString();
 	}
 	
 	

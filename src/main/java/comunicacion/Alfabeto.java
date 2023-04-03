@@ -13,15 +13,24 @@ public class Alfabeto extends Pictograma{
 	
 	//methods
 	public int cantidadLetras() {
-		return 0;
+		int cantLet = this.letras.length;
+		return cantLet;
 	}
 	
 	public String interpretacion() {
-		return "";
+		String a = this.interpretacion;
+		return a;
 	}
 	
 	public String toString() {
-		return "";
+	    StringBuilder output = new StringBuilder();
+	    for (int i = 0; i < this.letras.length; i++) {
+	        if (i > 0) {
+	            output.append(", ");
+	        }
+	        output.append(this.letras[i]);
+	    }
+	    return output.toString();
 	}
 	
 	
